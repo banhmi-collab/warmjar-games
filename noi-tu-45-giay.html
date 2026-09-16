@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư — Nối Từ 45 Giây</title>
+<meta name="description" content="Chính sách quyền riêng tư của trò chơi Nối Từ 45 Giây (com.warmjar.noitu)">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px;
+    color: #24222b; background: #fffdfb;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e6ec; background: #16151a; }
+    code { background: #26242c; }
+    th { background: #26242c; }
+    td, th { border-color: #383641; }
+    .lang { background: #232028; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; }
+  .meta { color: #7c7788; font-size: .9rem; margin-top: 0; }
+  .lang { margin: 28px 0; padding: 12px 16px; border-radius: 10px; background: #f3eef7; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .94rem; display: block; overflow-x: auto; }
+  td, th { border: 1px solid #ddd8e2; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #f5f2f8; }
+  code { background: #f1edf5; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  hr { border: none; border-top: 1px solid #ddd8e2; margin: 3em 0; }
+  a { color: #7a5ea8; }
+  ul { padding-left: 1.2em; }
+  li { margin: .35em 0; }
+</style>
+</head>
+<body>
+<h1>Chính sách quyền riêng tư — Nối Từ 45 Giây</h1>
+<p><strong>Ứng dụng:</strong> Nối Từ 45 Giây (<code>com.warmjar.noitu</code>)<br><strong>Nhà phát triển:</strong> Warm Jar Games<br><strong>Có hiệu lực từ:</strong> 15/09/2026</p>
+<hr>
+<h2>Tóm tắt trong ba câu</h2>
+<p>Game này <strong>không có tài khoản, không có đăng nhập, không có quảng cáo theo dõi.</strong></p>
+<p>Chỉ có <strong>ba</strong> thứ rời khỏi máy bạn: từ bạn <strong>tự bấm nút báo</strong>, <strong>báo cáo lỗi kỹ thuật khi game sập</strong>, và <strong>số liệu ẩn danh về cách bạn dùng app</strong>.</p>
+<p>Không thứ nào trong ba thứ đó gắn với tên, email, số điện thoại hay vị trí của bạn.</p>
+<hr>
+<h2>1. Khi bạn bấm 「Từ này đúng mà」</h2>
+<p>Từ điển của game chắc chắn còn thiếu từ. Khi bạn gõ một từ đúng mà game không nhận, bạn có thể bấm nút báo. Lúc đó — <strong>và chỉ lúc đó</strong> — game gửi lên máy chủ:</p>
+<table>
+<tr><th>Gửi gì</th><th>Ví dụ</th></tr>
+<tr><td>Từ bạn vừa gõ</td><td><code>cà phê</code></td></tr>
+<tr><td>Vần của từ đó</td><td><code>cà</code></td></tr>
+<tr><td>Thời điểm bấm</td><td><code>1757836800000</code></td></tr>
+<tr><td>Số hiệu bản game</td><td><code>1.0.0</code></td></tr>
+</table>
+<p>Việc chạm vào một từ của máy để báo 「từ này lạ」 cũng gửi đúng bốn thứ trên.</p>
+<p><strong>Dùng để làm gì:</strong> để nhà phát triển đọc, duyệt tay, rồi bổ sung hoặc gỡ từ đó khỏi từ điển trong bản cập nhật sau. Không dùng vào việc gì khác.</p>
+<p><strong>Lưu ở đâu:</strong> Google Cloud Firestore (Firebase). Luật máy chủ chỉ cho phép <strong>ghi</strong>, cấm đọc và cấm sửa từ phía ứng dụng.</p>
+<p><strong>Không gửi kèm:</strong> tên, email, số điện thoại, danh bạ, vị trí, mã thiết bị, mã quảng cáo, hay bất kỳ thứ gì nhận ra được bạn. Vì không có mã nào đi kèm, các lần báo của cùng một người <strong>không nối lại với nhau được</strong> — không dựng được hồ sơ người dùng, kể cả nhà phát triển cũng không.</p>
+<p><strong>Mất mạng thì sao:</strong> từ báo nằm chờ trong máy bạn và được gửi ở lần mở app sau. Nếu bạn gỡ app trước khi nó gửi được thì nó mất luôn.</p>
+<h2>2. Khi game sập</h2>
+<p>Game dùng <strong>Firebase Crashlytics</strong> để biết app hỏng ở đâu. Khi có lỗi, nó gửi:</p>
+<ul><li>vết lỗi kỹ thuật (dòng code nào hỏng)</li><li>kiểu máy, phiên bản Android, dung lượng bộ nhớ trống</li><li>nhật ký thao tác gần nhất trong game — ví dụ <code>van_bat_dau</code>, <code>van_ket_thuc</code>, và <strong>từ bạn vừa báo</strong> nếu lỗi xảy ra ngay sau đó</li><li>một <strong>mã cài đặt ngẫu nhiên</strong> do Firebase sinh ra. Mã này gắn với <strong>lần cài app</strong>, không gắn với bạn; gỡ app rồi cài lại là ra mã khác</li></ul>
+<p><strong>Dùng để làm gì:</strong> chỉ để sửa lỗi.</p>
+<p>Chính sách riêng của Google về dữ liệu này: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+<h2>2b. Khi bạn chơi — số liệu sử dụng</h2>
+<p>Game dùng <strong>Firebase Analytics</strong> để biết app có được dùng thật không. Nó gửi:</p>
+<ul><li><strong>thời điểm mở app</strong> và độ dài phiên chơi</li><li><strong>các mốc trong game</strong>: bắt đầu ván, kết thúc ván, số từ nối được, độ khó đang chọn, kỷ lục mới</li><li>kiểu máy, phiên bản Android, ngôn ngữ và <strong>quốc gia ở mức thô</strong> <em>(suy ra từ địa chỉ mạng — không phải vị trí GPS)</em></li><li>một <strong>mã cài đặt ngẫu nhiên</strong> do Firebase sinh ra, gắn với <strong>lần cài app</strong>, không gắn với bạn. Gỡ app rồi cài lại là ra mã khác</li></ul>
+<p><strong>Dùng để làm gì:</strong> để nhà phát triển biết trong 100 người cài app, bao nhiêu người còn mở lại sau một tuần. Con số đó quyết định game được làm tiếp hay bỏ. Không dùng để nhắm quảng cáo, không bán cho ai.</p>
+<p><strong>KHÔNG thu mã quảng cáo (Advertising ID).</strong> Firebase Analytics mặc định là có thu — game này <strong>tắt hẳn</strong> ở hai tầng: quyền <code>AD_ID</code> bị chặn khỏi ứng dụng, và ba khoá thu mã quảng cáo bị tắt trong <code>firebase.json</code>. Cả hai đều nằm trong mã nguồn, kiểm được.</p>
+<p><strong>Không gửi kèm:</strong> tên, email, số điện thoại, danh bạ, vị trí GPS, mã quảng cáo, hay <strong>những từ bạn gõ trong lúc chơi</strong> — trừ đúng từ bạn tự bấm nút báo ở mục 1.</p>
+<h2>3. Lưu trên máy bạn</h2>
+<p>Kỷ lục, số ván đã chơi, độ khó, cài đặt tiếng, chuỗi ngày mở app — tất cả nằm trong bộ nhớ riêng của ứng dụng <strong>trên chính máy bạn</strong>. Không đồng bộ đi đâu cả.</p>
+<p>Xoá được bất cứ lúc nào: <strong>Cài đặt → Xoá tiến độ</strong>. Gỡ ứng dụng cũng xoá hết.</p>
+<h2>4. Những thứ game này KHÔNG làm</h2>
+<ul><li>Không yêu cầu tài khoản, không đăng nhập, không kết nối mạng xã hội</li><li>Không xin quyền micro, máy ảnh, danh bạ, vị trí, hay bộ nhớ ngoài</li><li>Không đọc những gì bạn gõ nếu bạn không tự bấm nút báo</li><li>Không nhắm quảng cáo, không dựng hồ sơ cá nhân từ số liệu sử dụng</li><li>Không bán, không cho thuê, không chia sẻ dữ liệu với bên thứ ba nào ngoài Google (Firebase) với vai trò nhà cung cấp hạ tầng</li><li>Không dùng mã quảng cáo (Advertising ID)</li></ul>
+<h2>5. Trẻ em</h2>
+<p>Game không nhắm tới trẻ dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em. Vì game không thu thập thông tin nhận dạng của bất kỳ ai, nên cũng không có dữ liệu trẻ em nào để lưu.</p>
+<h2>6. Quyền của bạn</h2>
+<p>Vì các báo lỗi từ điển <strong>không gắn với danh tính</strong>, nhà phát triển không có cách nào tìm ra dòng nào là của bạn để xoá riêng — chính vì vậy mà nó không nhận ra bạn được. Nếu bạn muốn ngừng gửi hoàn toàn: đừng bấm nút báo, hoặc gỡ ứng dụng.</p>
+<p>Muốn hỏi gì thì gửi thư tới địa chỉ ở mục 8.</p>
+<h2>7. Thay đổi chính sách</h2>
+<p>Có thay đổi thì ngày hiệu lực ở đầu trang sẽ đổi theo, và bản cập nhật được đăng tại chính địa chỉ này.</p>
+<h2>8. Liên hệ</h2>
+<p>Warm Jar Games — tlshiftatmt@gmail.com</p>
+<hr>
+<h2>Ghi nguồn bộ từ điển</h2>
+<p>Bộ từ trong game dựng từ <strong>Wiktionary tiếng Việt</strong> (<a href="https://vi.wiktionary.org/">https://vi.wiktionary.org/</a>), <strong>có chỉnh sửa và lọc bớt</strong>.</p>
+<p>Cả bản gốc lẫn bản đã sửa đều theo giấy phép <strong>Creative Commons Ghi công – Chia sẻ tương tự 4.0 Quốc tế (CC BY-SA 4.0)</strong>: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.vi">https://creativecommons.org/licenses/by-sa/4.0/deed.vi</a></p>
+<p>Theo điều khoản <strong>ShareAlike</strong>, bản đã sửa được phát hành lại đầy đủ — cả dữ liệu lẫn script dựng — tại: <a href="https://github.com/banhmi-collab/noi-tu-tieng-viet">https://github.com/banhmi-collab/noi-tu-tieng-viet</a></p>
+<p>Phần còn lại của ứng dụng (mã nguồn, hình ảnh, âm thanh, lời thoại) thuộc bản quyền Warm Jar Games và <strong>không</strong> nằm trong giấy phép trên.</p>
+</body>
+</html>
