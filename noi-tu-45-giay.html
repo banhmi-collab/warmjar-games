@@ -35,10 +35,10 @@
 </head>
 <body>
 <h1>Chính sách quyền riêng tư — Nối Từ 45 Giây</h1>
-<p><strong>Ứng dụng:</strong> Nối Từ 45 Giây (<code>com.warmjar.noitu</code>)<br><strong>Nhà phát triển:</strong> Warm Jar Games<br><strong>Có hiệu lực từ:</strong> 15/09/2026</p>
+<p><strong>Ứng dụng:</strong> Nối Từ 45 Giây (<code>com.warmjar.noitu</code>)<br><strong>Nhà phát triển:</strong> Warm Jar Games<br><strong>Có hiệu lực từ:</strong> 18/09/2026 <em>(bản trước: 15/09/2026)</em></p>
 <hr>
 <h2>Tóm tắt trong ba câu</h2>
-<p>Game này <strong>không có tài khoản, không có đăng nhập, không có quảng cáo theo dõi.</strong></p>
+<p>Game này <strong>không có tài khoản, không có đăng nhập.</strong> Có quảng cáo, nhưng là loại <strong>không cá nhân hoá</strong> — nó không theo dõi bạn và không dựa trên những gì bạn làm.</p>
 <p>Chỉ có <strong>ba</strong> thứ rời khỏi máy bạn: từ bạn <strong>tự bấm nút báo</strong>, <strong>báo cáo lỗi kỹ thuật khi game sập</strong>, và <strong>số liệu ẩn danh về cách bạn dùng app</strong>.</p>
 <p>Không thứ nào trong ba thứ đó gắn với tên, email, số điện thoại hay vị trí của bạn.</p>
 <hr>
@@ -70,6 +70,20 @@
 <h2>3. Lưu trên máy bạn</h2>
 <p>Kỷ lục, số ván đã chơi, độ khó, cài đặt tiếng, chuỗi ngày mở app — tất cả nằm trong bộ nhớ riêng của ứng dụng <strong>trên chính máy bạn</strong>. Không đồng bộ đi đâu cả.</p>
 <p>Xoá được bất cứ lúc nào: <strong>Cài đặt → Xoá tiến độ</strong>. Gỡ ứng dụng cũng xoá hết.</p>
+<h2>3b. Quảng cáo</h2>
+<p>Game có hiển thị quảng cáo <strong>do bạn tự chọn xem</strong> — bấm nút để đổi lấy thêm một lượt trợ giúp. Không có quảng cáo tự bật lên, không có quảng cáo chen ngang.</p>
+<p>Quảng cáo do <strong>Google AdMob</strong> cung cấp.</p>
+<p><strong>Chỉ dùng quảng cáo KHÔNG cá nhân hoá.</strong> Nghĩa là quảng cáo bạn thấy <strong>không</strong> dựa trên những gì bạn từng xem, từng tìm, hay từng làm trong app nào khác.</p>
+<p>Chặn ở <strong>ba tầng</strong>, đều nằm trong mã nguồn và kiểm được:</p>
+<table>
+<tr><td><code>app.json</code></td><td>quyền <code>AD_ID</code> bị chặn khỏi ứng dụng</td></tr>
+<tr><td><code>firebase.json</code></td><td>ba khoá thu mã quảng cáo tắt hẳn</td></tr>
+<tr><td><code>admob.ts</code></td><td>mỗi lần xin quảng cáo đều khai rõ <code>requestNonPersonalizedAdsOnly</code></td></tr>
+</table>
+<p><strong>Google vẫn nhận được gì:</strong> địa chỉ mạng <em>(để biết nước và chọn ngôn ngữ quảng cáo)</em>, loại thiết bị, và việc bạn đã xem xong một quảng cáo. Đây là mức tối thiểu để quảng cáo chạy được — không có mã nào nhận ra bạn đi kèm.</p>
+<p><strong>Gói trả tiền「Gói yên tĩnh」tắt quảng cáo vĩnh viễn.</strong> Mua một lần, không thu thêm dữ liệu gì; giao dịch do Google Play xử lý, chúng tôi không thấy số thẻ.</p>
+<p>Chính sách riêng của Google về dữ liệu quảng cáo: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+
 <h2>4. Những thứ game này KHÔNG làm</h2>
 <ul><li>Không yêu cầu tài khoản, không đăng nhập, không kết nối mạng xã hội</li><li>Không xin quyền micro, máy ảnh, danh bạ, vị trí, hay bộ nhớ ngoài</li><li>Không đọc những gì bạn gõ nếu bạn không tự bấm nút báo</li><li>Không nhắm quảng cáo, không dựng hồ sơ cá nhân từ số liệu sử dụng</li><li>Không bán, không cho thuê, không chia sẻ dữ liệu với bên thứ ba nào ngoài Google (Firebase) với vai trò nhà cung cấp hạ tầng</li><li>Không dùng mã quảng cáo (Advertising ID)</li></ul>
 <h2>5. Trẻ em</h2>
