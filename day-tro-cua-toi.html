@@ -35,46 +35,36 @@
 </head>
 <body>
 <h1>Chính sách quyền riêng tư — Dãy Trọ Của Tôi</h1>
-<p><strong>Ứng dụng:</strong> Dãy Trọ Của Tôi (<code>com.warmjar.daytro</code>)<br><strong>Nhà phát triển:</strong> Warm Jar Games<br><strong>Có hiệu lực từ:</strong> 01/10/2026 <em>(bản trước: 30/09/2026)</em></p>
-<p class="meta">Cập nhật: 4/11/2026 — bổ sung mục Xóm trọ trên web bên dưới.</p>
+<p><strong>Ứng dụng:</strong> Dãy Trọ Của Tôi (<code>com.warmjar.daytro</code>)<br><strong>Nhà phát triển:</strong> Warm Jar Games<br><strong>Có hiệu lực từ:</strong> 08/11/2026 <em>(bản trước: 01/10/2026)</em></p>
+<p class="meta">Cập nhật 08/11/2026: bản Android vc14 bỏ quảng cáo; nói rõ hơn dữ liệu kỹ thuật, thông báo nhắc, sao lưu Android và thống kê bản web.</p>
 <hr>
-<h2>Tóm tắt trong ba câu</h2>
-<p>Game này <strong>không có tài khoản, không có đăng nhập</strong>, và bạn không phải gõ bất kỳ thông tin cá nhân nào. Có quảng cáo <strong>do bạn tự chọn xem</strong>, và chỉ là loại <strong>không cá nhân hoá</strong>.</p>
-<p>Chỉ có <strong>hai</strong> thứ rời khỏi máy bạn: <strong>báo cáo lỗi kỹ thuật khi game sập</strong> và <strong>số liệu ẩn danh về cách bạn chơi</strong>. Không thứ nào gắn với tên, email, số điện thoại hay vị trí của bạn.</p>
+<h2>Tóm tắt</h2>
+<p>Bạn <strong>không cần tạo tài khoản</strong> để chơi, và game không yêu cầu bạn nhập tên, email hay số điện thoại. Bản Android <strong>hiện không có quảng cáo</strong>.</p>
+<p>Game dùng dịch vụ của Google để thống kê cách chơi, báo lỗi, nhận cấu hình game và xử lý mua trong ứng dụng. Các dịch vụ này có thể nhận <strong>địa chỉ mạng, thông tin thiết bị và mã ngẫu nhiên</strong> do dịch vụ tạo ra. Bản web còn xử lý đơn mua, mã trình duyệt và phòng bạn tự chọn đăng lên Xóm.</p>
 
-<h2>1. Lưu trên máy bạn</h2>
-<p>Ván chơi — tiền, phòng, đồ đạc, khách đang ở, lá thư, sổ khách, việc hôm nay — nằm trong bộ nhớ riêng của ứng dụng <strong>trên chính máy bạn</strong>. Không đồng bộ đi đâu cả. Gỡ ứng dụng là xoá hết; trong game cũng có nút <strong>↺ Chơi lại</strong> để bắt đầu lại từ đầu.</p>
+<h2>1. Ván chơi lưu trên máy bạn</h2>
+<p>Ván chơi — tiền, phòng, đồ đạc, khách, lá thư, sổ khách, việc hôm nay — được lưu trên thiết bị của bạn. Game <strong>không tự đồng bộ ván lên máy chủ</strong> của Warm Jar. Android có thể sao lưu và khôi phục dữ liệu ứng dụng theo cài đặt sao lưu trên máy bạn. Trong game có nút <strong>↺ Chơi lại</strong> để bắt đầu lại từ đầu.</p>
+<p>Xoá ván hay gỡ ứng dụng không xoá các số liệu thống kê đã gửi, hoá đơn mua trên Google Play, đơn mua trên web hoặc phòng đã đăng lên Xóm.</p>
 
-<h2>2. Khi game sập</h2>
-<p>Game dùng <strong>Firebase Crashlytics</strong> để biết app hỏng ở đâu. Khi có lỗi, nó gửi:</p>
-<ul>
-<li>vết lỗi kỹ thuật (dòng code nào hỏng);</li>
-<li>kiểu máy, phiên bản Android, dung lượng bộ nhớ trống;</li>
-<li>các mốc gần nhất trong game, ví dụ <code>cho_thue</code>, <code>het_thang</code>;</li>
-<li>một <strong>mã cài đặt ngẫu nhiên</strong> do Firebase sinh ra, gắn với <strong>lần cài app</strong>, không gắn với bạn. Gỡ rồi cài lại là ra mã khác.</li>
-</ul>
-<p><strong>Dùng để làm gì:</strong> chỉ để sửa lỗi. Chính sách của Google về dữ liệu này: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
+<h2>2. Khi game gặp lỗi</h2>
+<p>Game dùng <strong>Firebase Crashlytics</strong> để biết app hỏng ở đâu. Khi có lỗi, nó gửi vết lỗi kỹ thuật, kiểu máy, phiên bản Android, bộ nhớ trống, các mốc gần nhất trong game (ví dụ <code>cho_thue</code>, <code>het_thang</code>) và một mã cài đặt ngẫu nhiên do Firebase tạo cho lần cài app.</p>
+<p><strong>Dùng để làm gì:</strong> để sửa lỗi. Chính sách của Google về dữ liệu này: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></p>
 
-<h2>3. Khi bạn chơi — số liệu sử dụng</h2>
-<p>Game dùng <strong>Firebase Analytics</strong> để biết game có được chơi thật không. Nó gửi:</p>
-<ul>
-<li>thời điểm mở app và độ dài phiên chơi;</li>
-<li>các mốc trong game: bắt đầu ván, cho thuê phòng, hết tháng, bị bùng tiền trọ, mở phòng mới, xong việc hôm nay, xem quảng cáo;</li>
-<li>kiểu máy, phiên bản Android, ngôn ngữ và <strong>quốc gia ở mức thô</strong> (suy ra từ địa chỉ mạng — không phải vị trí GPS);</li>
-<li>mã cài đặt ngẫu nhiên như ở mục 2.</li>
-</ul>
-<p><strong>Dùng để làm gì:</strong> để biết trong 100 người cài game, bao nhiêu người còn quay lại sau một tuần, và người chơi hay bỏ cuộc ở đâu. Không dùng để nhắm quảng cáo, không bán cho ai.</p>
-<p><strong>KHÔNG thu mã quảng cáo (Advertising ID).</strong> Quyền <code>AD_ID</code> bị chặn khỏi ứng dụng, và các khoá thu mã quảng cáo của Firebase bị tắt.</p>
+<h2>3. Số liệu cách chơi và cấu hình game</h2>
+<p>Game dùng <strong>Firebase Analytics</strong> để đo việc chơi. Nó gửi thời điểm mở app và độ dài phiên chơi; các mốc trong game như bắt đầu ván, cho thuê phòng, hết tháng, mở phòng mới, xong việc hôm nay, mua gói; kiểu máy, phiên bản Android, ngôn ngữ và <strong>vị trí ước chừng ở mức quốc gia</strong> suy ra từ địa chỉ mạng (không dùng GPS); cùng các mã ngẫu nhiên do dịch vụ tạo cho ứng dụng và lần cài.</p>
+<p>Game dùng <strong>Firebase Remote Config</strong> để nhận cấu hình game (ví dụ thời gian chờ sửa sự cố). Dịch vụ này xử lý thông tin kỹ thuật và mã cài đặt theo mô tả của Google.</p>
+<p><strong>Dùng để làm gì:</strong> để biết bao nhiêu người còn quay lại chơi, người chơi hay dừng ở đâu, và chỉnh game cho dễ chơi hơn. Không dùng để nhắm quảng cáo, không bán cho ai.</p>
+<p>Quyền <code>com.google.android.gms.permission.AD_ID</code> và ba quyền <code>ACCESS_ADSERVICES</code> bị chặn khỏi ứng dụng, và Firebase Analytics được cấu hình không thu mã quảng cáo.</p>
 
 <h2>4. Quảng cáo</h2>
-<p>Game có quảng cáo <strong>do bạn tự bấm xem</strong> để đổi lấy phần thưởng trong game (thêm một lượt khách, nhận thêm tiền). Không có quảng cáo tự bật lên, không có quảng cáo chen ngang.</p>
-<p>Quảng cáo do <strong>Google AdMob</strong> cung cấp và <strong>chỉ là quảng cáo KHÔNG cá nhân hoá</strong> — không dựa trên những gì bạn từng xem, tìm hay làm ở app khác. Google vẫn nhận được địa chỉ mạng (để biết nước), loại thiết bị và việc bạn đã xem xong một quảng cáo — mức tối thiểu để quảng cáo chạy được.</p>
-<p>Ở một số khu vực (như châu Âu), game sẽ hỏi ý bạn trước khi hiện quảng cáo, theo quy định ở đó.</p>
-<p>Chính sách của Google về dữ liệu quảng cáo: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+<p>Bản Android hiện tại <strong>không có quảng cáo</strong> và không chứa thư viện quảng cáo. Nếu sau này thêm quảng cáo, chúng tôi sẽ cập nhật chính sách này trước khi bản đó phát hành.</p>
+
+<h2>4a. Thông báo nhắc chơi</h2>
+<p>Nếu bạn đồng ý, app xin quyền thông báo để nhắc bạn quay lại nhận tiền. Lịch nhắc được đặt ngay trên máy, không gửi qua máy chủ; bạn có thể tắt trong Cài đặt của game hoặc của Android. Game ghi thống kê việc đồng ý, từ chối và mở game từ thông báo.</p>
 
 <h2>4b. Mua trong ứng dụng</h2>
-<p>Game có các gói mua một lần, dùng mãi: <strong>Gói Tết</strong> (đồ trang trí Tết), <strong>Mèo cưng</strong>, <strong>Gói khởi nghiệp</strong> (thêm tiền trong game và biển neon) và <strong>Gói không quảng cáo</strong> (nhận thưởng mà không phải xem quảng cáo). Không mua vẫn chơi được toàn bộ game.</p>
-<p>Việc thanh toán do <strong>Google Play</strong> xử lý. Chúng tôi <strong>không thấy</strong> số thẻ, tài khoản ngân hàng hay tên của bạn — chỉ biết máy này đã sở hữu gói nào, để mở đồ tương ứng và khôi phục khi bạn cài lại app.</p>
+<p>Bản Android có các gói mua một lần, dùng mãi: <strong>Gói Tết</strong>, <strong>Gói Noel</strong>, <strong>Mèo cưng</strong> và <strong>Gói khởi nghiệp</strong>. Không mua vẫn chơi được toàn bộ game trên Android.</p>
+<p>Việc thanh toán do <strong>Google Play</strong> xử lý. Chúng tôi <strong>không thấy</strong> số thẻ, tài khoản ngân hàng hay tên của bạn. Google Play và thư viện mua hàng xử lý giao dịch, trạng thái và mã mua để game biết máy này đã sở hữu gói nào, mở đồ tương ứng và khôi phục khi bạn cài lại app.</p>
 
 <section aria-labelledby="thanh-toan-web">
 <h2 id="thanh-toan-web">4c. Thanh toán trên web</h2>
@@ -89,26 +79,29 @@
 <h2 id="xom-tro-web">4d. Xóm trọ trên web</h2>
 <p>Xóm trọ trên bản web là tính năng tự chọn. Khi bạn chủ động đăng phòng, máy chủ lưu bố trí đồ, màu và trang trí phòng để người khác xem công khai. Máy chủ lưu mã máy đã băm để nhận biết phòng của bạn và giới hạn lượt tương tác; đồng thời lưu tim, hoa, cây và ngày tặng để báo quà và chống tặng lặp. Không gửi tên hoặc chữ riêng người chơi nhập trong bố trí phòng. Nếu cần hỗ trợ ẩn phòng, liên hệ <a href="mailto:warmjar.games@gmail.com">Warm Jar</a>.</p>
 
+<h2 id="thong-ke-web">4e. Thống kê trên bản web</h2>
+<p>Bản web dùng <strong>Google Analytics 4</strong> để đo lượt truy cập, phiên chơi, các mốc trong game, thao tác mua và lựa chọn lý do chưa thanh toán. Google có thể dùng cookie <code>_ga</code> để phân biệt trình duyệt và phiên. Game chỉ gửi mã lựa chọn có sẵn, không gửi chữ bạn tự gõ, mã đơn hay bố trí phòng vào các sự kiện này. Mã trình duyệt phục vụ mua và khôi phục được lưu bằng cookie và bộ nhớ của trình duyệt.</p>
+
 <h2>5. Những thứ game này KHÔNG làm</h2>
 <ul>
-<li>Không yêu cầu tài khoản, không đăng nhập, không kết nối mạng xã hội.</li>
+<li>Không yêu cầu tài khoản, không đăng nhập, không liên kết tài khoản mạng xã hội. Bạn có thể tự mở nhóm cộng đồng hoặc chia sẻ ảnh phòng bằng ứng dụng của mình.</li>
 <li>Không xin quyền micro, máy ảnh, danh bạ, vị trí hay bộ nhớ ngoài.</li>
-<li>Không dùng mã quảng cáo (Advertising ID).</li>
-<li>Đối với ứng dụng Android, không bán, không cho thuê, không chia sẻ dữ liệu với bên thứ ba nào ngoài Google (Firebase, AdMob) với vai trò nhà cung cấp dịch vụ.</li>
+<li>Không dùng mã quảng cáo (Advertising ID) và không có quảng cáo trong bản Android hiện tại.</li>
+<li>Đối với ứng dụng Android, không bán, không cho thuê, không chia sẻ dữ liệu với bên thứ ba nào ngoài Google (Firebase, Google Play) với vai trò nhà cung cấp dịch vụ.</li>
 <li>Riêng thanh toán trên web dùng SePay (nhận báo chuyển khoản), Cloudflare (máy chủ) và Supabase (cơ sở dữ liệu đơn hàng) với vai trò nhà cung cấp dịch vụ. Xem dữ liệu và mục đích sử dụng tại <a href="#thanh-toan-web">mục 4c — Thanh toán trên web</a>.</li>
 </ul>
 
 <h2>6. Trẻ em</h2>
-<p>Game không nhắm tới trẻ dưới 13 tuổi và không cố ý thu thập dữ liệu của trẻ em. Vì game không thu thập thông tin nhận dạng của bất kỳ ai, nên cũng không có dữ liệu trẻ em nào để lưu.</p>
+<p>Game không hướng tới trẻ dưới 13 tuổi và không yêu cầu khai tuổi để chơi. Game vẫn có dữ liệu kỹ thuật và mã ngẫu nhiên như mô tả ở trên. Nếu phụ huynh có câu hỏi về dữ liệu của trẻ, hãy liên hệ Warm Jar theo mục 9.</p>
 
 <h2>7. Quyền của bạn</h2>
-<p>Dữ liệu ván chơi chỉ nằm trên máy bạn — xoá bằng cách gỡ ứng dụng. Số liệu gửi đi không gắn với danh tính, nên nhà phát triển không có cách nào nhận ra dòng nào là của bạn. Muốn hỏi gì thì gửi thư tới địa chỉ ở mục 9.</p>
+<p>Ván chơi nằm trên máy bạn; bạn xoá bằng nút Chơi lại hoặc gỡ ứng dụng (lưu ý sao lưu Android ở mục 1). Số liệu thống kê không gắn với tên, email hay số điện thoại; khả năng đối chiếu dữ liệu trên máy chủ phụ thuộc mã đơn hoặc mã phòng bạn cung cấp. Muốn hỏi hay yêu cầu về dữ liệu, gửi thư tới địa chỉ ở mục 9.</p>
 
 <h2>8. Thay đổi chính sách</h2>
 <p>Có thay đổi thì ngày hiệu lực ở đầu trang sẽ đổi theo, và bản cập nhật được đăng tại chính địa chỉ này.</p>
 
 <h2>9. Liên hệ</h2>
-<p>Warm Jar Games — <a href="mailto:tlshiftatmt@gmail.com">tlshiftatmt@gmail.com</a></p>
+<p>Warm Jar Games — <a href="mailto:warmjar.games@gmail.com">warmjar.games@gmail.com</a></p>
 
 <hr>
 <p class="meta">Mã nguồn, hình vẽ, âm thanh và lời thoại của trò chơi thuộc bản quyền Warm Jar Games.</p>
